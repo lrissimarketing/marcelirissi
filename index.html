@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aprovação Dra. Marceli Rissi Novembro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap">
+<style>
+body{margin:0;background:#f7f0d6;font-family:'Poppins',system-ui,sans-serif;color:#1c1530;-webkit-font-smoothing:antialiased}
+a{color:#6c2ee6}a:hover{color:#1c1530}
+*{box-sizing:border-box}
+.root{font-family:'Poppins',system-ui,sans-serif;color:#1c1530;-webkit-font-smoothing:antialiased;display:flex;flex-wrap:wrap;min-height:100vh;background:#f7f0d6}
+button{font-family:inherit;color:inherit}
+:focus-visible{outline:2px solid #6c2ee6;outline-offset:3px}
+.ic{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.ic-fill{fill:currentColor;stroke:none}
+.cap{margin:0;font-size:10.5px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:rgba(253,249,236,.62)}
+
+/* Sidebar */
+.sb{flex:0 0 260px;width:260px;background:#1c1530;color:#fdf9ec}
+.sb :focus-visible{outline-color:#c1ff72}
+.sb .icon-btn:hover{background:rgba(253,249,236,.1)}
+.sb-pad{padding:40px 22px 32px 22px}
+.sb-logo{width:100%;max-width:216px;background:#8c52ff;border-radius:18px;padding:16px 14px 14px 12px;overflow:hidden}
+.sb-logo img{display:block;width:100%;height:auto}
+.sb-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.sb-sub{margin-top:32px}
+.sb-client{margin:0;font-weight:800;font-size:30px;line-height:1.05;letter-spacing:-.03em;color:#fdf9ec}
+.sb-month{margin:12px 0 0 0;display:inline-block;padding:5px 11px;border-radius:999px;background:#c1ff72;font-size:10.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#1c1530}
+.sb-rule{height:1px;background:rgba(253,249,236,.12);margin:28px 0 18px 0}
+.sb .menu-btn{display:none}
+.sb-list{display:flex;flex-direction:column;gap:4px;margin:0;padding:0;list-style:none}
+.sb-item{width:100%;display:flex;align-items:center;gap:12px;padding:8px 10px 8px 8px;border:0;border-radius:14px;background:transparent;cursor:pointer;text-align:left;transition:background .25s cubic-bezier(.22,.61,.36,1),color .25s}
+.sb-item:hover{background:rgba(253,249,236,.07)}
+.sb-num{flex:0 0 22px;width:22px;height:22px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;font-size:10.5px;font-weight:600;background:rgba(253,249,236,.12);color:#fdf9ec}
+.sb-item.is-active{background:#c1ff72;color:#1c1530}
+.sb-item.is-active .sb-num{background:#1c1530;color:#c1ff72}
+.sb-item.is-active:focus-visible{outline-color:#fdf9ec}
+.sb-thumb{flex:0 0 44px;width:44px;height:44px;border-radius:10px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#8c52ff}
+.sb-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.sb-txt{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;gap:1px}
+.sb-rot{font-size:13px;font-weight:500;line-height:1.3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sb-date{font-size:10.5px;font-weight:400;letter-spacing:.04em;opacity:.75}
+.sb-type{flex:0 0 auto;display:inline-flex;opacity:.85}
+@media (min-width:900px){.sb{position:sticky;top:0;height:100vh;overflow-y:auto}}
+@media (max-width:899px){
+  .sb{flex:1 1 100%;width:100%}
+  .sb-logo{max-width:150px;padding:10px 10px 9px 9px;border-radius:14px}
+  .bulb{width:48px !important;top:-10px !important}
+  .sb-pad{padding:18px 16px}
+  .sb .menu-btn{display:inline-flex}
+  .sb-list{display:none}
+  .sb-list.open{display:flex;margin-top:18px}
+  .sb-sub{margin-top:14px}
+}
+
+/* Main / feed */
+.main{flex:999 1 560px;min-width:0}
+.main-pad{padding:64px 64px 80px}
+.wrap{max-width:880px;margin:0 auto}
+.feed-head{position:relative;display:flex;flex-direction:column;gap:16px;margin-bottom:40px}
+.bulb{position:absolute;right:0;top:-18px;width:76px;height:auto;transform:rotate(10deg);pointer-events:none}
+.pill{margin:0;align-self:flex-start;padding:6px 13px;border-radius:999px;background:#c1ff72;font-size:10.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#1c1530}
+.feed-title{margin:0;max-width:680px;padding-right:56px;font-weight:800;font-size:50px;line-height:1.02;letter-spacing:-.035em;color:#1c1530}
+.feed-title span{color:#8c52ff}
+.summary{margin:4px 0 0 0;font-size:14px;font-weight:300;line-height:1.7;color:#3d3554;max-width:560px}
+@media (max-width:899px){.main-pad{padding:28px 16px 56px}.feed-title{font-size:30px}}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.tile{position:relative;display:block;width:100%;aspect-ratio:1/1;padding:0;border:0;border-radius:6px;overflow:hidden;cursor:pointer;background:#ece3c4}
+.tile-media{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .7s cubic-bezier(.22,.61,.36,1)}
+.tile-veil{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(28,21,48,.38);opacity:0;transition:opacity .35s cubic-bezier(.22,.61,.36,1)}
+.tile-ver{font-size:11px;font-weight:700;letter-spacing:.32em;text-transform:uppercase;color:#1c1530;background:#c1ff72;padding:9px 16px 9px 20px;border:1px solid #c1ff72;border-radius:999px;transform:translateY(6px);transition:transform .35s cubic-bezier(.22,.61,.36,1)}
+.tile:hover .tile-media,.tile:focus-visible .tile-media{transform:scale(1.045)}
+.tile:hover .tile-veil,.tile:focus-visible .tile-veil{opacity:1}
+.tile:hover .tile-ver,.tile:focus-visible .tile-ver{transform:none}
+.badge{position:absolute;top:10px;display:flex;align-items:center;justify-content:center;pointer-events:none}
+.badge-n{left:10px;min-width:26px;height:26px;padding:0 6px;border-radius:999px;background:rgba(253,249,236,.94);color:#1c1530;font-size:11px;font-weight:600}
+.badge-t{right:10px;width:28px;height:28px;border-radius:999px;background:#8c52ff;color:#fdf9ec}
+@media (max-width:620px){.badge{top:6px}}
+.foot{margin-top:48px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:11px;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:#5e5675}
+
+/* Viewer */
+.overlay{position:fixed;inset:0;z-index:50;display:flex;align-items:center;justify-content:center;padding:24px;background:rgba(28,21,48,.42);-webkit-backdrop-filter:blur(12px) saturate(.9);backdrop-filter:blur(12px) saturate(.9);animation:fadeIn .3s ease both}
+.overlay[hidden]{display:none}
+.card{position:relative;width:min(600px,100%);max-height:calc(100vh - 48px);overflow-y:auto;background:#fdf9ec;border-radius:26px;box-shadow:0 30px 80px -30px rgba(28,21,48,.55);animation:rise .45s cubic-bezier(.22,.61,.36,1) both}
+.card:focus{outline:none}
+@media (max-width:620px){.overlay{padding:10px}.card{max-height:calc(100vh - 20px);border-radius:20px}}
+.card-top{display:flex;align-items:center;gap:12px;padding:14px 14px 14px 22px}
+.card-n{flex:0 0 30px;width:30px;height:30px;border-radius:999px;background:#c1ff72;color:#1c1530;display:inline-flex;align-items:center;justify-content:center;font-size:12px;font-weight:600}
+.card-id{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;gap:2px}
+.card-rot{font-size:19px;font-weight:800;line-height:1.2;letter-spacing:-.02em;color:#1c1530;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.card-meta{font-size:10.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:#6c2ee6}
+.media{position:relative;width:100%;overflow:hidden;background:#1c1530;user-select:none;-webkit-user-select:none}
+.media-square{aspect-ratio:4/5;width:min(100%,calc(min(66vh,700px) * 0.8));margin:0 auto}
+.media-reel{aspect-ratio:9/16;max-height:min(70vh,680px);margin:0 auto}
+.viewport{position:absolute;inset:0;overflow:hidden;touch-action:pan-y;cursor:grab}
+.viewport:active{cursor:grabbing}
+.track{display:flex;height:100%;will-change:transform;transition:transform .55s cubic-bezier(.22,.61,.36,1)}
+.track.is-dragging{transition:none}
+.slide{flex:0 0 100%;width:100%;height:100%;position:relative}
+.slide img{width:100%;height:100%;object-fit:cover;display:block;pointer-events:none}
+.slide video{width:100%;height:100%;object-fit:cover;display:block;background:#1c1530}
+.ph{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:#8c52ff;color:#fdf9ec;text-align:center;padding:32px}
+.arrow{position:absolute;top:50%;width:44px;height:44px;margin-top:-22px;border:0;border-radius:999px;background:rgba(253,249,236,.92);color:#1c1530;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 6px 18px -8px rgba(28,21,48,.5);transition:transform .25s cubic-bezier(.22,.61,.36,1),background .25s}
+.arrow:hover{background:#fdf9ec;transform:scale(1.06)}
+.arrow[hidden]{display:none}
+.counter{position:absolute;top:14px;right:14px;padding:5px 11px;border-radius:999px;background:rgba(28,21,48,.55);color:#fdf9ec;font-size:11.5px;font-weight:500;letter-spacing:.06em;pointer-events:none}
+.dots{display:flex;justify-content:center;align-items:center;gap:6px;padding:16px 0 4px 0}
+.dot{width:6px;height:6px;border-radius:999px;background:#8c52ff;opacity:.3;transition:width .4s cubic-bezier(.22,.61,.36,1),opacity .3s,background .3s}
+.dot.on{width:20px;opacity:1}
+.play{position:relative;width:76px;height:76px;border:0;border-radius:999px;background:#c1ff72;color:#1c1530;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 14px 40px -12px rgba(28,21,48,.6);transition:transform .3s cubic-bezier(.22,.61,.36,1)}
+.play:hover{transform:scale(1.07)}
+.fade-in{animation:fadeIn .4s ease both}
+.icon-btn{width:44px;height:44px;border:0;border-radius:999px;background:transparent;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;transition:background .2s}
+.icon-btn:hover{background:rgba(140,82,255,.1)}
+.cap-body{padding:22px 28px 30px 28px}
+.cap-title{margin:0 0 22px 0;font-size:20px;font-weight:600;line-height:1.35;color:#1c1530}
+.label{margin:0 0 12px 0;font-size:10.5px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:#6c2ee6}
+.roteiro{margin:0 0 24px 0;padding:20px 22px;border-radius:18px;background:#f7f0d6}
+.roteiro p.txt{margin:0;font-size:13.5px;font-weight:300;line-height:1.75;color:#1c1530;white-space:pre-line}
+.legenda{margin:0;font-size:14px;font-weight:300;line-height:1.75;color:#1c1530;white-space:pre-line;overflow-wrap:anywhere}
+.legenda .tag{color:#6c2ee6;font-weight:500}
+.legenda.vazia{font-style:italic;color:#5e5675}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes rise{from{opacity:0;transform:translateY(18px) scale(.985)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){
+  .track,.tile-media,.tile-veil,.tile-ver,.dot,.arrow,.play,.sb-item{transition:none !important}
+  .overlay,.card,.fade-in{animation:none !important}
+  .tile:hover .tile-media{transform:none}
+}
+</style>
+</head>
+<body>
+<div class="root">
+  <aside class="sb" aria-label="Posts do mês">
+    <div class="sb-pad">
+      <div class="sb-head">
+        <div>
+          <div class="sb-logo"><img src="logo-pulsa-lab.png" alt="Pulsa Lab" draggable="false"></div>
+          <div class="sb-sub">
+            <p class="cap" style="margin-bottom:6px">Cliente</p>
+            <h2 class="sb-client" id="cliente"></h2>
+            <p class="sb-month" id="mes"></p>
+          </div>
+        </div>
+        <button type="button" class="menu-btn icon-btn" id="menuBtn" aria-expanded="false" aria-controls="lista" aria-label="Mostrar lista de posts">
+          <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path class="ic" d="M4 7h16M4 12h16M4 17h10"></path></svg>
+        </button>
+      </div>
+      <div class="sb-rule"></div>
+      <p class="cap" style="margin:0 0 12px 10px">Posts do mês</p>
+      <ul class="sb-list" id="lista"></ul>
+    </div>
+  </aside>
+
+  <main class="main main-pad">
+    <div class="wrap">
+      <header class="feed-head">
+        <img class="bulb" src="lampada.png" alt="" aria-hidden="true" draggable="false">
+        <p class="pill">Pré-visualização do feed</p>
+        <h1 class="feed-title">O conteúdo do mês, como vai aparecer <span>no perfil.</span></h1>
+        <p class="summary"><span id="summary"></span>, na ordem em que vão aparecer no perfil (o mais recente primeiro). Toque em qualquer post para ver as artes e a legenda completas.</p>
+      </header>
+      <div class="grid" id="grid"></div>
+      <footer class="foot"><span>Pulsa Lab · Conteúdo para aprovação</span><span id="mesFoot"></span></footer>
+    </div>
+  </main>
+</div>
+
+<div class="overlay" id="overlay" hidden>
+  <div class="card" id="card" role="dialog" aria-modal="true" tabindex="-1"></div>
+</div>
+
+<script>
+/* ─────────────────────────────────────────────
+   CONTEÚDO DO MÊS
+   tipo: 'carrossel' | 'reel' | 'imagem'
+   Todos os arquivos ficam na mesma pasta do index.html (sem subpastas).
+   Num carrossel, um slide de vídeo é { video: '...', poster: '...' }.
+   ───────────────────────────────────────────── */
+const CLIENTE = 'Dra. Marceli Rissi';
+const MES = 'Novembro 2026';
+const CONTEUDO = [
+      { tipo: "carrossel", data: "03/11", rotulo: "Prazer, Dra. Marceli", titulo: "Prazer, Dra. Marceli", slides: ["p01-1.jpg", "p01-2.jpg", "p01-3.jpg", "p01-4.jpg", "p01-5.jpg", "p01-6.jpg", "p01-7.jpg"], legenda: "Prazer, eu sou a Dra. Marceli Maria Rissi 👋\nMédica desde 2015 e Médica do Trabalho desde 2021, em Chapecó e região. Por aqui o assunto é treino, alimentação, energia e desempenho, explicado sem enrolação e sem achismo.\nCrossfit, corrida ou musculação: me conta nos comentários de onde você é e qual dúvida eu respondo primeiro." },
+      { tipo: "carrossel", data: "10/11", rotulo: "Glicemia alterada", titulo: "Glicemia alterada no exame periódico: e agora?", slides: ["p02-1.jpg", "p02-2.jpg", "p02-3.jpg", "p02-4.jpg", "p02-5.jpg", "p02-6.jpg", "p02-7.jpg"], legenda: "Todo ano ele aparece no exame periódico, e todo ano vai para a gaveta: a glicemia \"só um pouquinho alta\".\n\nNo Dia Mundial do Diabetes (14/11), fica o convite para olhar esse número com mais atenção. Pré-diabetes quase nunca dá sintoma, e é exatamente por isso que o exame do trabalho pode ser o primeiro aviso.\n\nArrasta para entender o que cada faixa significa e o que fazer com o resultado. Salva e compartilha com quem precisa ver isso." },
+      { tipo: "carrossel", data: "17/11", rotulo: "Trabalho em turno", titulo: "Trabalha em turno? Sua alimentação precisa saber disso", slides: ["p03-1.jpg", "p03-2.jpg", "p03-3.jpg", "p03-4.jpg", "p03-5.jpg", "p03-6.jpg", "p03-7.jpg"], legenda: "Se você trabalha de madrugada, já percebeu: a fome muda, a vontade de doce aumenta e o sono nunca parece suficiente. Não é falta de força de vontade, é o seu relógio biológico pedindo atenção.\n\nArrasta para entender o que acontece com o corpo de quem trabalha em turno e o que ajuda de verdade no dia a dia.\n\nSalva e compartilha com aquele colega da escala da noite." },
+      { tipo: "carrossel", data: "24/11", rotulo: "Atestado × ASO", titulo: "Atestado médico × ASO: qual a diferença?", slides: ["p04-1.jpg", "p04-2.jpg", "p04-3.jpg", "p04-4.jpg", "p04-5.jpg", "p04-6.jpg", "p04-7.jpg"], legenda: "\"Mas ele trouxe um atestado dizendo que está apto!\" Se você trabalha no RH, provavelmente já ouviu isso.\n\nAtestado médico e ASO parecem a mesma coisa, mas têm funções bem diferentes. E entender essa diferença evita retrabalho, admissão travada e risco para a empresa.\n\nArrasta para entender e salva para consultar depois. Dúvidas sobre exames ocupacionais? Me chama no direct." }
+    ];
+
+const ICONS = {
+  carrossel: '<svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><rect class="ic" x="7" y="7" width="13" height="13" rx="2.5"></rect><path class="ic" d="M4 16V6.5A2.5 2.5 0 0 1 6.5 4H16"></path></svg>',
+  reel: '<svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><rect class="ic" x="3" y="3" width="18" height="18" rx="4.5"></rect><path class="ic" d="M10 8.5v7l6-3.5z"></path></svg>',
+  imagem: '<svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><rect class="ic" x="3" y="3" width="18" height="18" rx="3.5"></rect><circle class="ic" cx="9" cy="9" r="1.6"></circle><path class="ic" d="M21 15.5l-5-5L5 21"></path></svg>'
+};
+const TYPE = { carrossel: 'Carrossel', reel: 'Reel', imagem: 'Imagem' };
+const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const $ = (id) => document.getElementById(id);
+
+const slideSrc = (x) => (x && typeof x === 'object') ? (x.poster || '') : (x || '');
+const cover = (p) => p.capa || (p.tipo === 'carrossel' ? slideSrc((p.slides || [])[0]) : p.tipo === 'imagem' ? (p.imagem || '') : '');
+const slidesOf = (p) => !p ? [] : p.tipo === 'carrossel' ? (p.slides || []) : p.tipo === 'imagem' ? [p.imagem || ''] : [];
+
+const st = { open: null, slide: 0, playing: false, menuOpen: false, lastFocus: null };
+
+/* ---------- Página ---------- */
+$('cliente').textContent = CLIENTE;
+$('mes').textContent = MES;
+$('mesFoot').textContent = MES;
+const count = (t) => CONTEUDO.filter((p) => p.tipo === t).length;
+const plural = (n, a, b) => n + ' ' + (n === 1 ? a : b);
+const parts = [plural(CONTEUDO.length, 'publicação', 'publicações')];
+if (count('carrossel')) parts.push(plural(count('carrossel'), 'carrossel', 'carrosséis'));
+if (count('reel')) parts.push(plural(count('reel'), 'reel', 'reels'));
+if (count('imagem')) parts.push(plural(count('imagem'), 'imagem', 'imagens'));
+$('summary').textContent = parts.join(' · ');
+
+function renderList() {
+  $('lista').innerHTML = CONTEUDO.map((p, i) => {
+    const c = cover(p);
+    const active = st.open === i;
+    return `<li><button type="button" class="sb-item${active ? ' is-active' : ''}" data-open="${i}" aria-current="${active}">
+      <span class="sb-thumb">${c ? `<img src="${esc(c)}" alt="" draggable="false">` : `<span style="font-size:15px;font-weight:600">${String(i + 1).padStart(2, '0')}</span>`}</span>
+      <span class="sb-num">${i + 1}</span>
+      <span class="sb-txt"><span class="sb-rot">${esc(p.rotulo)}</span><span class="sb-date">${esc(p.data || '')}</span></span>
+      <span class="sb-type" title="${TYPE[p.tipo]}">${ICONS[p.tipo]}</span>
+    </button></li>`;
+  }).join('');
+}
+function renderGrid() {
+  $('grid').innerHTML = CONTEUDO.map((p, i) => ({ p, i })).reverse().map(({ p, i }) => {
+    const c = cover(p);
+    return `<button type="button" class="tile" data-open="${i}" aria-label="Abrir post ${i + 1}: ${TYPE[p.tipo]}, ${esc(p.rotulo)}">
+      ${c ? `<img class="tile-media" src="${esc(c)}" alt="" draggable="false">` : `<span class="tile-media ph"><span style="font-size:10px;letter-spacing:.3em;text-transform:uppercase;opacity:.8">[capa]</span><span style="font-weight:800;font-size:17px">${esc(p.rotulo)}</span></span>`}
+      <span class="tile-veil"><span class="tile-ver">ver</span></span>
+      <span class="badge badge-n">${i + 1}</span>
+      <span class="badge badge-t">${ICONS[p.tipo]}</span>
+    </button>`;
+  }).join('');
+}
+renderList();
+renderGrid();
+
+document.addEventListener('click', (e) => {
+  const b = e.target.closest('[data-open]');
+  if (b) openPost(Number(b.dataset.open));
+});
+$('menuBtn').addEventListener('click', () => {
+  st.menuOpen = !st.menuOpen;
+  $('lista').classList.toggle('open', st.menuOpen);
+  $('menuBtn').setAttribute('aria-expanded', String(st.menuOpen));
+});
+
+/* ---------- Visualizador ---------- */
+const overlay = $('overlay'), card = $('card');
+function captionHtml(txt) {
+  return txt.split(/([#@][^\s#@]+)/g).filter((x) => x !== '').map((x) => /^[#@]/.test(x) ? `<span class="tag">${esc(x)}</span>` : esc(x)).join('');
+}
+function slideHtml(x, j, n, active) {
+  if (x && typeof x === 'object' && x.video) {
+    return active
+      ? `<video src="${esc(x.video)}" poster="${esc(x.poster || '')}" controls autoplay playsinline loop></video>`
+      : `<img src="${esc(x.poster || '')}" alt="Slide ${j + 1} de ${n} (vídeo)" draggable="false">`;
+  }
+  if (x) return `<img src="${esc(x)}" alt="Slide ${j + 1} de ${n}" draggable="false">`;
+  return `<div class="ph"><span style="font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;opacity:.8">[insira a arte]</span><span style="font-size:34px;font-weight:600">${j === 0 ? 'Capa' : 'Slide ' + (j + 1)}</span></div>`;
+}
+
+function openPost(i) {
+  if (st.open === null) st.lastFocus = document.activeElement;
+  st.open = i; st.slide = 0; st.playing = false;
+  if (st.menuOpen) { st.menuOpen = false; $('lista').classList.remove('open'); $('menuBtn').setAttribute('aria-expanded', 'false'); }
+  renderViewer();
+  renderList();
+  overlay.hidden = false;
+  document.documentElement.style.overflow = 'hidden';
+  setTimeout(() => card.focus({ preventScroll: true }), 30);
+}
+function closePost() {
+  st.open = null; st.playing = false;
+  overlay.hidden = true;
+  card.innerHTML = '';
+  document.documentElement.style.overflow = '';
+  renderList();
+  const f = st.lastFocus; if (f && f.focus) f.focus();
+}
+
+function renderViewer() {
+  const i = st.open, p = CONTEUDO[i];
+  const srcs = slidesOf(p), n = srcs.length;
+  const isC = p.tipo === 'carrossel', isR = p.tipo === 'reel';
+  const meta = (p.formato || TYPE[p.tipo]) + (isC ? ' · ' + n + ' slides' : '') + (p.data ? ' · ' + p.data : '') + ' · Post ' + (i + 1) + ' de ' + CONTEUDO.length;
+  card.setAttribute('aria-label', 'Post ' + (i + 1) + ': ' + TYPE[p.tipo] + ', ' + p.rotulo);
+
+  let media = '';
+  if (n > 0) {
+    media = `<div class="media media-square">
+      <div class="viewport" id="viewport" aria-roledescription="carrossel">
+        <div class="track" id="track">${srcs.map((x, j) => `<div class="slide" data-j="${j}" aria-hidden="${j !== st.slide}">${slideHtml(x, j, n, j === st.slide)}</div>`).join('')}</div>
+      </div>
+      ${isC ? `<span class="counter" id="counter" aria-live="polite"></span>
+      <button type="button" class="arrow" id="prev" style="left:14px" aria-label="Slide anterior"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path class="ic" d="M14.5 6l-6 6 6 6"></path></svg></button>
+      <button type="button" class="arrow" id="next" style="right:14px" aria-label="Próximo slide"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path class="ic" d="M9.5 6l6 6-6 6"></path></svg></button>` : ''}
+    </div>
+    ${isC ? `<div class="dots" aria-hidden="true">${srcs.map((_, j) => `<span class="dot"></span>`).join('')}</div>` : ''}`;
+  } else if (isR) {
+    media = `<div style="background:#1c1530;display:flex;justify-content:center"><div class="media media-reel" id="reel"></div></div>`;
+  }
+
+  const legenda = String(p.legenda || '');
+  card.innerHTML = `
+    <div class="card-top">
+      <span class="card-n">${i + 1}</span>
+      <div class="card-id"><span class="card-rot">${esc(p.rotulo)}</span><span class="card-meta">${esc(meta)}</span></div>
+      <button type="button" class="icon-btn" id="close" aria-label="Fechar"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path class="ic" d="M6 6l12 12M18 6L6 18"></path></svg></button>
+    </div>
+    ${media}
+    <div class="cap-body">
+      ${p.titulo ? `<p class="cap-title">${esc(p.titulo)}</p>` : ''}
+      ${p.roteiro ? `<div class="roteiro"><p class="label">Roteiro</p><p class="txt">${esc(p.roteiro)}</p></div>` : ''}
+      <p class="label">Legenda</p>
+      ${legenda.trim() ? `<p class="legenda">${captionHtml(legenda)}</p>` : `<p class="legenda vazia">Legenda ainda não enviada para este post.</p>`}
+    </div>`;
+
+  $('close').addEventListener('click', closePost);
+  if (isC) {
+    $('prev').addEventListener('click', () => go(-1));
+    $('next').addEventListener('click', () => go(1));
+    bindDrag();
+  }
+  if (n > 0) updateSlide(false);
+  if (isR) renderReel(p);
+}
+
+function updateSlide(rebuildVideo = true) {
+  const p = CONTEUDO[st.open], srcs = slidesOf(p), n = srcs.length;
+  const track = $('track'); if (!track) return;
+  track.style.transform = `translateX(${-st.slide * 100}%)`;
+  if (rebuildVideo) {
+    track.querySelectorAll('.slide').forEach((el) => {
+      const j = Number(el.dataset.j), x = srcs[j];
+      el.setAttribute('aria-hidden', String(j !== st.slide));
+      if (x && typeof x === 'object' && x.video) {
+        const want = j === st.slide, has = !!el.querySelector('video');
+        if (want !== has) el.innerHTML = slideHtml(x, j, n, want);
+      }
+    });
+  }
+  if (p.tipo === 'carrossel') {
+    $('counter').textContent = (st.slide + 1) + '/' + n;
+    $('prev').hidden = st.slide === 0;
+    $('next').hidden = st.slide >= n - 1;
+    card.querySelectorAll('.dot').forEach((d, j) => d.classList.toggle('on', j === st.slide));
+  }
+}
+function go(d) {
+  const n = slidesOf(CONTEUDO[st.open]).length;
+  if (n < 2) return;
+  const s = Math.max(0, Math.min(n - 1, st.slide + d));
+  if (s !== st.slide) { st.slide = s; updateSlide(); }
+}
+
+function bindDrag() {
+  const vp = $('viewport'), track = $('track');
+  let sx = 0, w = 1, dx = 0, dragging = false;
+  vp.addEventListener('pointerdown', (e) => {
+    if (e.target.closest('button, video')) return;
+    if (e.pointerType === 'mouse' && e.button !== 0) return;
+    sx = e.clientX; w = vp.offsetWidth || 1; dx = 0; dragging = true;
+    try { vp.setPointerCapture(e.pointerId); } catch (_) {}
+    track.classList.add('is-dragging');
+  });
+  vp.addEventListener('pointermove', (e) => {
+    if (!dragging) return;
+    const n = slidesOf(CONTEUDO[st.open]).length;
+    dx = e.clientX - sx;
+    if ((st.slide === 0 && dx > 0) || (st.slide === n - 1 && dx < 0)) dx = dx / 3;
+    track.style.transform = `translateX(calc(${-st.slide * 100}% + ${dx}px))`;
+  });
+  const up = () => {
+    if (!dragging) return;
+    dragging = false;
+    track.classList.remove('is-dragging');
+    const th = Math.min(80, w * 0.15);
+    if (dx < -th) go(1); else if (dx > th) go(-1); else updateSlide(false);
+  };
+  vp.addEventListener('pointerup', up);
+  vp.addEventListener('pointercancel', up);
+}
+
+function renderReel(p) {
+  const el = $('reel');
+  const c = cover(p);
+  if (!st.playing) {
+    el.innerHTML = `<div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:#8c52ff;color:#fdf9ec">
+      ${c ? `<img src="${esc(c)}" alt="Capa do reel" draggable="false" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">` : ''}
+      ${p.video ? `<button type="button" class="play" id="play" aria-label="Reproduzir reel"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path class="ic-fill" d="M8 5.5v13l11-6.5z"></path></svg></button>`
+        : `<div style="position:relative;display:flex;flex-direction:column;align-items:center;gap:14px;padding:28px;text-align:center"><span style="font-size:24px;font-weight:600;line-height:1.2">Vídeo em produção</span>${p.roteiro ? '<span style="font-size:10.5px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;opacity:.85">Aprove o roteiro abaixo</span>' : ''}</div>`}
+    </div>`;
+    const b = $('play'); if (b) b.addEventListener('click', () => { st.playing = true; renderReel(p); });
+  } else {
+    el.innerHTML = `<video class="fade-in" src="${esc(p.video)}" poster="${esc(c)}" controls autoplay playsinline style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#1c1530"></video>`;
+  }
+}
+
+overlay.addEventListener('click', (e) => { if (e.target === overlay) closePost(); });
+document.addEventListener('keydown', (e) => {
+  if (st.open === null) return;
+  if (e.key === 'Escape') { e.preventDefault(); closePost(); }
+  else if (e.target.tagName !== 'VIDEO' && e.key === 'ArrowRight') { e.preventDefault(); go(1); }
+  else if (e.target.tagName !== 'VIDEO' && e.key === 'ArrowLeft') { e.preventDefault(); go(-1); }
+  else if (e.key === 'Tab') {
+    const f = [...card.querySelectorAll('button:not([hidden]), video, [href]')];
+    if (!f.length) return;
+    if (e.shiftKey && document.activeElement === f[0]) { e.preventDefault(); f[f.length - 1].focus(); }
+    else if (!e.shiftKey && document.activeElement === f[f.length - 1]) { e.preventDefault(); f[0].focus(); }
+  }
+});
+</script>
+</body>
+</html>
